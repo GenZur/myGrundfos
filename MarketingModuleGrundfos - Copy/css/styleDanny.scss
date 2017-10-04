@@ -1,0 +1,419 @@
+/*style for navigations etc*/
+body {
+  background-color: #fcfcfc;
+  overflow-x: hidden;
+  font-family: MyWebfont, Verdana, sans-serif;
+  text-rendering: optimizeLegibility;
+  margin: 0 auto;
+}
+  /*Grundfos fonts installed*/
+  /*
+  FONTS TO USE besides grundfos':
+  font-family: "Lucida Grande", Tahoma, sans-serif;
+  */
+
+  @font-face {
+    font-family: "GrundfosTheSans";
+    src: url(../fonts/GrundfosTheSansV2_8_.eot);
+    src: url(../fonts/GrundfosTheSansV2_8_.eot?#iefix) format("embedded-opentype"), url(../fonts/GrundfosTheSansV2_8_.woff) format("woff"), url(../fonts/GrundfosTheSansV2_8_.svg#GrundfosTheSansV2_8_) format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+    @font-face {
+      font-family: "GrundfosTheSansLight";
+      src: url(../fonts/GrundfosTheSansV2SemiLight.eot);
+      src: url(../fonts/GrundfosTheSansV2SemiLight.eot?#iefix) format("embedded-opentype"), url(../fonts/GrundfosTheSansV2SemiLight.woff) format("woff"), url(../fonts/GrundfosTheSansV2SemiLight.svg#GrundfosTheSansSemiLight) format("svg");
+      font-weight: normal;
+      font-style: normal; }
+/*header and nav*/
+
+header {
+  background-color: #11497b;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 9em;
+}
+
+.logo {
+  margin: 1em;
+}
+
+.navbar__item {
+  display: inline-block;
+  font-size: 20px;
+  padding: 1em;
+  font-family: "Lucida Grande", Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+/*Picture and calll-to-action button*/
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2em;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr 1fr;
+}
+
+.hero__heading {
+  color: #fcfcfc;
+  font-size: 35px;
+  text-shadow: 0 1px 0 black;
+ }
+
+.hero__text {
+  color: #fcfcfc;
+  font-family: "GrundfosTheSansLight";
+  font-size: 20px;
+  text-shadow: 0 1px 0 black;
+ }
+
+.hero__btn {
+  font-size: 20px;
+  color: #fcfcfc;
+  width: 300px;
+  height: 40px;
+  background-color: #6eb556;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-family: "Lucida Grande", Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+  .hero__btn:hover {
+    background-color: #4aa22c;
+    cursor: pointer; }
+
+.navbar__list {
+  display: flex;
+  justify-content: center; }
+
+.navbar__link {
+  color: #fcfcfc;
+  height: 100%;
+  letter-spacing: 0.5px;
+  padding: 17px 0 12px 0;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 13px;
+}
+
+/*secondary navigation*/
+.navbar2 {
+  height: 75px;
+  background-color: #dedede;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.navbar2__list {
+  display: flex;
+  margin: 0;
+ }
+
+.navbar2__item {
+  display: inline-block;
+    margin-right: 3em;
+    line-height: 75px;
+    font-size: 15px;
+    font-family: GrundfosTheSans, Verdana, sans-serif;
+    align-self: center;
+}
+.navbar2__item:hover {
+  display: inline-block;
+    margin-right: 3em;
+    line-height: 75px;
+    font-size: 15px;
+    font-family: GrundfosTheSans, Verdana, sans-serif;
+    align-self: center;
+    background-color: #d6d6d6;
+}
+
+.navbar2__item--active {
+  border-bottom: 3px solid #11497b; }
+
+.navbar2__link {
+  color: #333333;
+  height: 100%;
+  letter-spacing: 0.5px;
+  padding: 17px 0 12px 0;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: bold; }
+
+
+
+@font-face { font-family: "GrundfosTheSans";
+    src: url(../fonts/GrundfosTheSansV2_8_.eot);
+    src: url(../fonts/GrundfosTheSansV2_8_.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/GrundfosTheSansV2_8_.woff) format("woff"),
+    url(../fonts/GrundfosTheSansV2_8_.svg#GrundfosTheSansV2_8_) format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+    //font-family: GrundfosTheSans, Verdana, sans-serif; text-rendering: optimizeLegibility; color:#333333;
+body { font-family: GrundfosTheSans, Verdana, sans-serif; text-rendering: optimizeLegibility; color:#333333;
+    button {
+        font-family: GrundfosTheSans, Verdana, sans-serif;
+    }
+    h1 {
+        font-family: GrundfosTheSans, Verdana, sans-serif; color:#333333; text-rendering: optimizeLegibility; font-size: 27px; font-weight: bold;
+    }
+    h2, h3 {
+        font-family: GrundfosTheSans, Verdana, sans-serif; color:#333333; text-rendering: optimizeLegibility; font-size: 25px; font-weight: bold;
+    }
+    h4, h5 {
+        font-family: GrundfosTheSans, Verdana, sans-serif; color:#333333; text-rendering: optimizeLegibility; font-size: 23px; font-weight: bold;
+    }
+    p {
+        font-family: Tahoma, sans-serif; color:#727272; font-size: 13px;
+    }
+}
+
+$green_button: #6eb556;
+$green_buttonHover: #4aa22c;
+$blue_button: #3386c3;
+$blue_buttonHover: #0068b4;
+$grey_button: #999999;
+$grey_buttonHover: #727272;
+
+@mixin button($color) {
+    color:white;
+    border: none;
+    width:100px;
+    height:25px;
+    background-color:$color;
+  }
+
+#test1, #test2, #test3 {
+ cursor:pointer;
+}
+
+.bundleBox {
+    border: solid black 1px;
+    display: inline-block;
+    margin-right:10px;
+    padding:10px;
+    width:80px;
+    height:80px;
+    text-align: center;
+    cursor:pointer;
+
+    h4{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+#checkBoxText {
+    display: inline-block;
+}
+
+#selectAll {
+    cursor:pointer;
+    color:$blue_button;
+    display: inline-block;
+    font-family: Tahoma;
+    font-size: 13px;
+    color:#0068b4;
+    margin-bottom: 10px;
+}
+
+#selectAll:hover {
+    color:$blue_buttonHover;
+}
+
+#bundleContentSection {
+    margin-top: 20px;
+    img {
+        max-height: 200px;
+        max-width: 200px;
+    }
+}
+
+#bundleBoxContainer {
+    text-align: center;
+    margin-top: 20px;
+
+    :nth-child(2) {
+        background-color: #b5d140;
+    }
+    :nth-child(3) {
+        background-color: #c0d0af;
+    }
+    :nth-child(4) {
+        background-color: #f6aa33;
+    }
+    :nth-child(5) {
+        background-color: #d5c591;
+    }
+    :nth-child(6) {
+        background-color: #33b1e9;
+    }
+}
+
+.bundleBox {
+    padding:0;
+    border:none;
+    width:9em;
+    height:8.6em;
+    margin-top: 10px;
+    h5{
+        font-size: 24px;
+        color:white;
+        margin-top: 2em;
+        font-weight: normal;
+    }
+}
+
+.findMaterialContentWrapper {
+    width:63%;
+    margin-left: 15%;
+    border:solid rgba(175, 135, 135, 0.51) 0.5px;
+    padding:20px;
+    margin-top: 10px;
+    background-color: #f2f2f2;
+
+    h2,h3,h4,h5,p {
+        padding:5px;
+    }
+}
+
+#searchContainer {
+    margin-top: 10px;
+    border:solid rgba(175, 135, 135, 0.51) 0.5px;
+    display: inline-block;
+
+    button{
+        @include button($blue_button);
+        margin-right: 5px;
+    }
+
+    button:hover{
+        background-color:$blue_buttonHover;
+    }
+
+    input {
+        margin-top: 10px;
+    }
+}
+
+#downloadSection {
+    li, input{
+        padding: 5px;
+    }
+    li{
+        font-size: 1em;
+    }
+}
+
+
+.awesomplete{
+    width:400px;
+    height:25px;
+    border-color: rgba(175, 135, 135, 0.51);
+    border-width: 0.5px;
+    padding-left:15px;
+    margin-left: -5px;
+    margin-right: 10px;
+
+    font-family: GrundfosTheSans, Verdana, sans-serif;
+    color:#333333;
+
+    input {
+    background-image: url(../images/searchIcon.png);
+    background-size: 5%;
+    background-position-x: 370px;
+    background-position-y: 3px;
+    background-repeat: no-repeat;
+    }
+
+    :focus{
+        outline-color:black;
+    }
+}
+
+#downloadButton {
+    @include button($green_button);
+}
+
+#downloadButton:hover {
+    background-color: $green_buttonHover;
+}
+
+#searchErrorSection {
+    position: absolute;
+    background-color: #dedede;
+    width: 380px;
+    height:45px;
+    padding-top: 17px;
+    padding-left: 20px;
+    margin-left: -5px;
+    border-color: rgba(175, 135, 135, 0.51);
+    border-width: 0.5px;
+
+    p{
+        margin:0;
+        padding:0;
+        display: inline-block;
+    }
+
+    img {
+        height: 20px;
+        padding-right: 20px;
+        display: inline-block;
+    }
+}
+
+.checkBoxContentContainer {
+    img {
+        width:15px;
+        height:15px;
+        display: inline-block;
+    }
+    button{
+        font-size: 10px;
+        @include button($blue_button);
+        width:50px;
+        height:20px;
+    }
+}
+
+.expandSection{
+    p{
+        display:inline-block;
+    }
+    input {
+        margin-left: 40px;
+    }
+    margin-bottom: 10px;
+}
+
+#levelDownImg {
+    margin-right: -14px;
+}
+
+footer {
+    margin-top: 30px;
+    height: 200px;
+    background-color:#11497b;
+    color:white;
+    p {
+        color: white;
+        font-size: 15px;
+    }
+    #footer {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    hr {
+        size:0.5px;
+    }
+}
